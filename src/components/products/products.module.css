@@ -1,0 +1,152 @@
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 480px !important;
+  position: relative;
+  transition: 0.3s;
+  justify-content: space-between;
+}
+
+.cardTop {
+  width: 100%;
+  height: 200px;
+}
+.cardTop > img {
+  height: 100%;
+  width: 100%;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 300px;
+  padding: 20px 10px;
+  background: #f4f5f7;
+}
+.cardBottom h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #3a3a3a;
+}
+.cardBottom h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #898989;
+}
+.CardBottomBottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CardBottomBottom h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #3a3a3a;
+}
+.CardBottomBottom h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+.hoverDiv {
+  transition: 0.3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3a3a3a;
+  opacity: 0.72;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.hoverDivCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.hoverDivCenter button {
+  width: 180px;
+  height: 48px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b88e2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.3s;
+  &:hover {
+    border: 2px solid #b88e2f;
+    color: #b88e2f;
+    background-color: transparent;
+  }
+}
+.hoverDivBottom {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.hoverDivBottom a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  transition: 0.3s;
+  &:hover {
+    color: #b88e2f;
+  }
+}
+
+.productCard:hover > .hoverDiv {
+  opacity: 0.72;
+  visibility: visible;
+}
+
+
+.asideSort {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  left: 5px;
+  top: 50%;
+  
+}
+.asideSort button{
+    width: 56px;
+    height: 35px;
+    background-color:#b88e2f;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 2px;
+    transition: .3s;
+    &:hover{
+        box-shadow:  0 0 10px  #896612;
+        background-color: #896612;
+    }
+}

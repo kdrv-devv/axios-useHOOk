@@ -1,0 +1,42 @@
+.showcase {
+  background: url(./imges/showcase-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showcase > div {
+  height: 316px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shoptext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.shoptext h2 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #0000008a;
+}
+
+.shopTextBottom {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.shopTextBottom a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000a1;
+}
+.shopTextBottom h6{
+font-weight: 300;
+font-size: 16px;
+color: #000;
+}

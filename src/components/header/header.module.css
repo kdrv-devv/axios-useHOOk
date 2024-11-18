@@ -1,0 +1,48 @@
+.header > div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerCenter {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.headerLeft img{
+   cursor: pointer;
+}
+
+.headerCenter a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  transition: 0.3s;
+  &:hover {
+    color: #b88e2f;
+    text-decoration: underline;
+  }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.headerRight button {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: .3s;
+  &:hover {
+    color: #b88e2f;
+
+  }
+}
